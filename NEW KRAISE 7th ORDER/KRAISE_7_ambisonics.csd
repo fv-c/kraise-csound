@@ -25,9 +25,9 @@
         ;CONTROLS   
         #include "Controls.csd"
         
-        schedule 10,0.001,-1
-        schedule 20,0.001,-1
-        schedule 50,0.001,-1
+        schedule 10,0.001,360
+        schedule 20,0.001,360
+        schedule 50,0.001,360
      
     endin
 
@@ -55,7 +55,7 @@
 
     instr 20
         ;---------DENS - DUR ---------------------
-        ;aggiungere densit√† e durata randommica (sempre in percentuale 50% a destrsa e 50% sinistra)
+        ;aggiungere densit√  e durata randommica (sempre in percentuale 50% a destrsa e 50% sinistra)
         ktrig metro gkDENS
         schedkwhen ktrig, 0, 0, 30, 0, gkDUR
         ;------------------------------------------
@@ -113,17 +113,34 @@
     
     instr 50;OUTS 
         out gaBformatOut * gkWET;OUT ARRAY
-    
-        clear gaBformatOut;CLEAR ARRAY GLOBAL AUDIO
+        gaformatOut[] init 64
+        ;clear gaBformatOut ;CLEAR ARRAY GLOBAL AUDIO
     endin
    
 
     </CsInstruments>
 
     <CsScore>
-        i1 0 36000
+        i1 0 360
         
 
     </CsScore>
 
 </CsoundSynthesizer>
+<bsbPanel>
+ <label>Widgets</label>
+ <objectName/>
+ <x>0</x>
+ <y>0</y>
+ <width>0</width>
+ <height>0</height>
+ <visible>true</visible>
+ <uuid/>
+ <bgcolor mode="nobackground">
+  <r>255</r>
+  <g>255</g>
+  <b>255</b>
+ </bgcolor>
+</bsbPanel>
+<bsbPresets>
+</bsbPresets>
