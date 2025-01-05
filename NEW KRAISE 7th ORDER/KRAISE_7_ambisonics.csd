@@ -101,7 +101,10 @@
         aBformat[] init 64
         
         ;UDO Encoder7order
-        aBformat Encoder7order aOut, i(gkAZI) + (i(gkSpredBform) * 360), i(gkELEV) + (i(gkSpredBform) * 90)
+        aAzi  = i(gkAZI) + (i(gkSpredBform) * 360)
+        aElev = i(gkELEV) + (i(gkSpredBform) * 90)
+        
+        aBformat Encoder7order aOut, aAzi, aElev
         
         gaBformatOut = gaBformatOut + aBformat;SEND TO INSTR 50
         ;---------------------------------------------------------------------------ls
