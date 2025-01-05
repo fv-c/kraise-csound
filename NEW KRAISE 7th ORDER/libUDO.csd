@@ -43,10 +43,6 @@ endop
 ;-------------FFT-------------------------------------------   
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> aee5c98dfc89216ab26d6a1ba746aa3f05834d8a
 ;----------------ENCODER 7 order AMBIX----------------------
 opcode Encoder7order, a[], aaa ;SIG, AZI, ELEV
 
