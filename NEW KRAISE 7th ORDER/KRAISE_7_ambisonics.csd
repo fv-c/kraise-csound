@@ -11,7 +11,7 @@
     0dbfs = 1
     
     ;libUDO FILE
-    #include "libUDO.csd"
+    #include "kraiseUDO.csd"
 
     ;variabili audio
     gaLDry init 0
@@ -55,7 +55,7 @@
 
     instr 20
         ;---------DENS - DUR ---------------------
-        ;aggiungere densit√  e durata randommica (sempre in percentuale 50% a destrsa e 50% sinistra)
+        ;aggiungere densit√É  e durata randommica (sempre in percentuale 50% a destrsa e 50% sinistra)
         ktrig metro gkDENS
         schedkwhen ktrig, 0, 0, 30, 0, gkDUR
         ;------------------------------------------
